@@ -322,26 +322,38 @@ export default function ThankYouPage() {
 
               {/* Right Column: Features & CTA Button */}
               <div className="lg:col-span-6 space-y-6 lg:border-l lg:border-purple-100 lg:pl-8">
-                <ul className="space-y-3.5">
-                  {[
-                    "Structured learning beyond the basics",
-                    "Practical market concepts",
-                    "Technical analysis fundamentals",
-                    "Risk management principles",
-                    "Continued guidance and support"
-                  ].map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-slate-800 text-sm sm:text-base font-semibold">
-                      <div className="w-5 h-5 rounded-full bg-[#5D196C] flex items-center justify-center shrink-0 shadow-xs">
-                        <Check className="w-3.5 h-3.5 text-white stroke-[3]" />
-                      </div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+                    <div className="w-5 h-5 rounded-full bg-[#5D196C] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                      <Check className="w-3.5 h-3.5 text-white stroke-[3]" />
+                    </div>
+                    <span>
+                      <strong className="font-bold text-slate-950">Recording of 3 sessions</strong> will be provided which covers fundamentals &amp; technicals
+                    </span>
+                  </li>
+
+                  <li className="flex items-start gap-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+                    <div className="w-5 h-5 rounded-full bg-[#5D196C] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                      <Check className="w-3.5 h-3.5 text-white stroke-[3]" />
+                    </div>
+                    <span>
+                      <strong className="font-bold text-slate-950">1 week of tool access</strong> which would be taught in 2nd Session
+                    </span>
+                  </li>
+
+                  <li className="flex items-start gap-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+                    <div className="w-5 h-5 rounded-full bg-[#5D196C] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                      <Check className="w-3.5 h-3.5 text-white stroke-[3]" />
+                    </div>
+                    <span>
+                      <strong className="font-bold text-slate-950">Free PDF of &quot;Profitable Trader&quot;</strong>, a book launched by Trading minds which talks about key attributes one needs to follow to win the market
+                    </span>
+                  </li>
                 </ul>
 
                 <div className="pt-3">
                   <a
-                    href="https://pages.razorpay.com/pl_TfODzGC84tS3Cw/view"
+                    href="https://rzp.io/rzp/94QRkpBq"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 bg-[#5D196C] hover:bg-[#4a1256] text-white font-bold text-base py-4 px-8 rounded-xl shadow-lg shadow-purple-900/10 hover:shadow-xl transition-all transform hover:-translate-y-0.5"

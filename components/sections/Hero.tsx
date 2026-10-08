@@ -1,5 +1,6 @@
 import { Calendar, Clock, Video, BookOpen } from "lucide-react";
 import RazorpayButton from "../ui/RazorpayButton";
+import HeroVideo from "../ui/HeroVideo";
 
 export default function Hero() {
   return (
@@ -21,15 +22,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
 
         {/* Left Video Element */}
-        <div className="relative aspect-video border-2 border-primary-brand rounded-lg overflow-hidden bg-slate-100 group shadow-[0_0_30px_-5px_rgba(93,25,108,0.2)]">
-          <iframe
-            className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/glrX_vFsiqo?autoplay=1&mute=0&loop=1&playlist=glrX_vFsiqo&controls=0"
-            title="The Trading Minds - Hero Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <HeroVideo />
 
         {/* Right Details */}
         <div className="flex flex-col justify-center">
