@@ -1,4 +1,5 @@
-import { Users, ArrowRight, Quote } from "lucide-react";
+import Image from "next/image";
+import { Users, ArrowRight } from "lucide-react";
 
 export default function HostCredibility() {
   return (
@@ -25,7 +26,15 @@ export default function HostCredibility() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-3xl rounded-full"></div>
                 <div className="relative z-10">
                   <div className="w-full aspect-[4/5] mb-4 overflow-hidden rounded-xl bg-gradient-to-b from-white/5 to-transparent relative">
-                    <img src="/p/DSC08306.JPG" alt="Pavan Joshi" className="w-full h-full object-cover rounded-xl" />
+                    <Image
+                      src="/p/DSC08306.JPG"
+                      alt="Pavan Joshi"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                      className="object-cover rounded-xl"
+                      quality={85}
+                      loading="lazy"
+                    />
                   </div>
                   <h3 className="text-white font-bold text-xl">Pavan Joshi</h3>
                   <p className="text-amber-500 text-sm font-medium mb-3">Founder</p>
@@ -34,14 +43,14 @@ export default function HostCredibility() {
                   </p>
                   <div className="flex items-center justify-between mt-auto">
                     <div className="flex gap-2">
-                      <a href="https://www.linkedin.com/in/pavandjoshi" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                      <a href="https://www.linkedin.com/in/pavandjoshi" target="_blank" rel="noreferrer" aria-label="Pavan Joshi LinkedIn" className="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
                       </a>
-                      <a href="https://www.instagram.com/pavanjoshii" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                      <a href="https://www.instagram.com/pavanjoshii" target="_blank" rel="noreferrer" aria-label="Pavan Joshi Instagram" className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
                       </a>
                     </div>
-                    <button className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
+                    <button aria-label="View details" className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -53,7 +62,15 @@ export default function HostCredibility() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-3xl rounded-full"></div>
                 <div className="relative z-10">
                   <div className="w-full aspect-[4/5] mb-4 overflow-hidden rounded-xl bg-gradient-to-b from-white/5 to-transparent relative">
-                    <img src="/vinay.jpeg" alt="Dr. Vinay Kumar Shetty" className="w-full h-full object-cover rounded-xl" />
+                    <Image
+                      src="/vinay.jpeg"
+                      alt="Dr. Vinay Kumar Shetty"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                      className="object-cover rounded-xl"
+                      quality={85}
+                      loading="lazy"
+                    />
                   </div>
                   <h3 className="text-white font-bold text-xl">Dr. Vinay Kumar Shetty</h3>
                   <p className="text-amber-500 text-sm font-medium mb-3">Founder</p>
@@ -62,14 +79,14 @@ export default function HostCredibility() {
                   </p>
                   <div className="flex items-center justify-between mt-auto">
                     <div className="flex gap-2">
-                      <a href="https://www.linkedin.com/in/dr-vinay-kumar-dinakar-6739b442" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                      <a href="https://www.linkedin.com/in/dr-vinay-kumar-dinakar-6739b442" target="_blank" rel="noreferrer" aria-label="Dr. Vinay Kumar Shetty LinkedIn" className="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
                       </a>
-                      <a href="https://www.instagram.com/vinay_shettyy" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                      <a href="https://www.instagram.com/vinay_shettyy" target="_blank" rel="noreferrer" aria-label="Dr. Vinay Kumar Shetty Instagram" className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
                       </a>
                     </div>
-                    <button className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
+                    <button aria-label="View details" className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -95,7 +112,7 @@ export default function HostCredibility() {
 
           <div className="flex flex-col gap-3 text-slate-600 text-sm sm:text-base mb-8 leading-relaxed">
             <p>
-              <strong className="text-slate-900">Pavan Joshi & Vinay Shetty — Founders, The Trading Minds</strong>
+              <strong className="text-slate-900">Pavan Joshi &amp; Vinay Shetty — Founders, The Trading Minds</strong>
             </p>
             <p>
               SEBI-registered Research Analyst entity (Reg. No. INH000023700), ಒಂದು mission ಮೇಲೆ built ಆಗಿದೆ: trading education ಅನ್ನು Kannada ದಲ್ಲಿ genuinely accessible ಮಾಡುವುದು.

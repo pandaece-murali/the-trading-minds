@@ -16,7 +16,11 @@ export default function PressGallery() {
     <section className="py-8 px-4 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex flex-col">
-          <ImageSlider categoryLabel="Press Gallery" images={images} />
+          <ImageSlider
+            categoryLabel="Press Gallery"
+            images={images}
+            priorityFirstSlide={true}
+          />
         </div>
       </div>
     </section>

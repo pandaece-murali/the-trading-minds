@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import RazorpayButton from "../ui/RazorpayButton";
@@ -20,9 +21,9 @@ export default function Navbar() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -32,7 +33,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 transition-opacity hover:opacity-80 flex items-center gap-2">
-            <img src="/image.png" alt="The Trading Minds Logo" className="h-12 w-auto object-contain" />
+            <Image
+              src="/image.png"
+              alt="The Trading Minds Logo"
+              width={48}
+              height={48}
+              className="h-12 w-auto object-contain"
+              priority
+            />
             <span className="font-bold text-xl text-primary-brand">The Trading Minds</span>
           </Link>
 

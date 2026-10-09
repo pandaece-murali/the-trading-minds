@@ -1,4 +1,4 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check } from "lucide-react";
 import RazorpayButton from "../ui/RazorpayButton";
 
 export default function Curriculum() {

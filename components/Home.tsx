@@ -12,7 +12,6 @@ import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import StickyCTA from "./sections/StickyCTA";
-import ChatbotWidget from "./ui/ChatbotWidget";
 import PressGallery from "./sections/PressGallery";
 
 export default function HomePage() {

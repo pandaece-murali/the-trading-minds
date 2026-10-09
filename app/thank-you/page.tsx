@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import {
   Check,
@@ -52,13 +53,13 @@ export default function ThankYouPage() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 transition-opacity hover:opacity-90">
-              <img
+              <Image
                 src="/image.png"
                 alt="The Trading Minds Logo"
+                width={48}
+                height={48}
                 className="h-10 sm:h-12 w-auto object-contain"
-                onError={(e) => {
-                  (e.target as HTMLElement).style.display = "none";
-                }}
+                priority
               />
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-950 flex items-center gap-1.5">
