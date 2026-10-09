@@ -10,7 +10,6 @@ export default function Gallery() {
       images: [
         "/student/s.JPG",
         "/student/s1.JPG",
-        "/student/s5.Jpeg",
         "/student/s3.jpeg",
         "/student/s4.JPG",
         "/T/t3.JPG",
