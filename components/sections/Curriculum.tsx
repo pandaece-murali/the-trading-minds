@@ -18,7 +18,7 @@ export default function Curriculum() {
               1
             </div>
             <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-slate-50 border border-primary-brand rounded-2xl shadow-sm hover:border-accent-pink hover:shadow-md transition-all">
-              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">1st November, 7:30pm</div>
+              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">1st December, 7:30pm</div>
               <h4 className="text-xl font-bold mb-4 text-primary-brand">Market Basics, Confusion ಇಲ್ಲದೆ</h4>
               <ul className="space-y-3">
                 <li className="flex gap-2 text-slate-700"><Check className="w-5 h-5 text-secondary-brand shrink-0" /> Stock market ನಿಜವಾಗಿ ಹೇಗೆ work ಮಾಡುತ್ತದೆ</li>
@@ -35,7 +35,7 @@ export default function Curriculum() {
               2
             </div>
             <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-slate-50 border border-primary-brand rounded-2xl shadow-sm hover:border-accent-pink hover:shadow-md transition-all">
-              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">2nd November, 7:30pm</div>
+              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">2nd December, 7:30pm</div>
               <h4 className="text-xl font-bold mb-4 text-primary-brand">Charts, Risk & Real Discipline</h4>
               <ul className="space-y-3">
                 <li className="flex gap-2 text-slate-700"><Check className="w-5 h-5 text-secondary-brand shrink-0" /> Candlesticks ಮತ್ತು technical chartsಗೆ Introduction</li>
@@ -53,7 +53,7 @@ export default function Curriculum() {
               3
             </div>
             <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-slate-50 border border-primary-brand rounded-2xl shadow-sm hover:border-accent-pink hover:shadow-md transition-all">
-              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">3rd November</div>
+              <div className="text-secondary-brand text-sm font-bold mb-2 tracking-wider uppercase">3rd December</div>
               <h4 className="text-xl font-bold mb-4 text-primary-brand">Charts in Action & Mindset</h4>
 
               <div className="mb-4">

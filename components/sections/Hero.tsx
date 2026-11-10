@@ -41,7 +41,7 @@ export default function Hero() {
                 <Calendar className="w-5 h-5 text-secondary-brand shrink-0 mt-0.5" />
                 <div>
                   <p className="text-slate-500 text-xs">Date:</p>
-                  <p className="font-semibold text-slate-900">1st, 2nd, 3rd Nov</p>
+                  <p className="font-semibold text-slate-900">1st, 2nd, 3rd Dec</p>
                 </div>
               </div>
 
