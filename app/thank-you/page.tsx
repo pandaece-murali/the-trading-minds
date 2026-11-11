@@ -226,7 +226,7 @@ export default function ThankYouPage() {
                   ))}
                 </ul>
               </div>
-
+              {/* whatsapp link */}
               <div className="pt-8">
                 <a
                   href="https://chat.whatsapp.com/FHrSw0N0cgABhCBhQr8yY4"
