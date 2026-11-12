@@ -81,6 +81,13 @@ export default function ThankYouPage() {
                 Community
               </a>
               <a
+                href="#referral"
+                onClick={(e) => scrollToSection(e, "referral")}
+                className="hover:text-[#5D196C] transition-colors"
+              >
+                Referral Program
+              </a>
+              <a
                 href="#learn"
                 onClick={(e) => scrollToSection(e, "learn")}
                 className="hover:text-[#5D196C] transition-colors"
@@ -126,6 +133,13 @@ export default function ThankYouPage() {
               className="block py-2 px-3 rounded-lg text-slate-700 hover:bg-purple-50 hover:text-[#5D196C]"
             >
               Community
+            </a>
+            <a
+              href="#referral"
+              onClick={(e) => scrollToSection(e, "referral")}
+              className="block py-2 px-3 rounded-lg text-slate-700 hover:bg-purple-50 hover:text-[#5D196C]"
+            >
+              Referral Program
             </a>
             <a
               href="#learn"
@@ -290,16 +304,53 @@ export default function ThankYouPage() {
           </div>
         </section>
 
-        <script
-          src="https://app.chirpxp.com/embed.js"
-          data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
-          data-mode="inline"
-          data-look="form"
-          data-width="520"
-          data-align="center"
-          data-radius="12"
-          data-shadow="1"
-        ></script>
+        {/* Referral Program Section */}
+        <section id="referral" className="space-y-6 pt-2 scroll-mt-24">
+          <div className="text-center space-y-2 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950">
+              Referral <span className="text-[#5D196C]">Program</span>
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base">
+              Invite friends to the webinar and earn exciting rewards as an Ambassador.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm flex flex-col items-center justify-center space-y-6">
+            <div className="w-full flex justify-center">
+              <script
+                src="https://app.chirpxp.com/embed.js"
+                data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
+                data-mode="inline"
+                data-look="form"
+                data-width="520"
+                data-align="center"
+                data-radius="12"
+                data-shadow="1"
+              ></script>
+            </div>
+
+            <div className="text-center pt-2">
+              <a
+                href="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#5D196C] hover:bg-[#4a1256] text-white font-bold text-base py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+              >
+                <span>Join Referral Program</span>
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </a>
+              <div className="mt-3">
+                <a
+                  href="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs sm:text-sm text-slate-500 hover:text-[#5D196C] underline break-all transition-colors"
+                >
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Up-sell / Next Step Section */}
         <section id="learn" className="scroll-mt-24">
