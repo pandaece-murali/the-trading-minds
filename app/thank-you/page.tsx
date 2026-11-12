@@ -290,6 +290,17 @@ export default function ThankYouPage() {
           </div>
         </section>
 
+        <script
+          src="https://app.chirpxp.com/embed.js"
+          data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
+          data-mode="inline"
+          data-look="form"
+          data-width="520"
+          data-align="center"
+          data-radius="12"
+          data-shadow="1"
+        ></script>
+
         {/* Up-sell / Next Step Section */}
         <section id="learn" className="scroll-mt-24">
           <div className="bg-gradient-to-br from-purple-50/70 via-white to-purple-50/40 rounded-3xl border-2 border-purple-200/80 p-6 sm:p-10 shadow-sm relative overflow-hidden">
