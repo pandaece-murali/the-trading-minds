@@ -330,16 +330,7 @@ export default function ThankYouPage() {
 
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm flex flex-col items-center justify-center space-y-6">
             <div className="w-full flex justify-center">
-              <script
-                src="https://app.chirpxp.com/embed.js"
-                data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
-                data-mode="inline"
-                data-look="form"
-                data-width="520"
-                data-align="center"
-                data-radius="12"
-                data-shadow="1"
-              ></script>
+              <script src="https://app.chirpxp.com/embed.js" data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j" data-mode="inline" data-look="card" data-heading="Refer &amp; Win specialised, limited-access rewards" data-subline="Join and introduce your friends and family to the market — learn together in Kannada." data-button="Join Referral Program" data-symbol="🎁" data-width="520" data-align="center" data-radius="12" data-shadow="1"></script>
             </div>
 
             <div className="text-center pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
@@ -645,7 +636,7 @@ export default function ThankYouPage() {
                 rel="noopener noreferrer"
                 className="text-xs text-slate-500 hover:text-[#5D196C] underline break-all mt-1"
               >
-            
+
               </a>
             </div>
           </div>
@@ -654,5 +645,3 @@ export default function ThankYouPage() {
     </div>
   );
 }
-
-
