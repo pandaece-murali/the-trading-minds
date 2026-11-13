@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Check,
   ArrowRight,
@@ -12,8 +12,7 @@ import {
   Star,
   ShieldCheck,
   Menu,
-  X,
-  Gift
+  X
 } from "lucide-react";
 
 // Official WhatsApp Logo Component
@@ -36,22 +35,10 @@ function TelegramLogo({ className = "w-6 h-6", color = "currentColor" }: { class
 
 export default function ThankYouPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [referralPopupOpen, setReferralPopupOpen] = useState(false);
-
-  useEffect(() => {
-    // Auto-open referral popup within 2 seconds
-    const timer = setTimeout(() => {
-      setReferralPopupOpen(true);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    if (id === "referral") {
-      setReferralPopupOpen(true);
-    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -333,7 +320,7 @@ export default function ThankYouPage() {
               <script src="https://app.chirpxp.com/embed.js" data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j" data-mode="inline" data-look="card" data-heading="Refer &amp; Win specialised, limited-access rewards" data-subline="Join and introduce your friends and family to the market — learn together in Kannada." data-button="Join Referral Program" data-symbol="🎁" data-width="520" data-align="center" data-radius="12" data-shadow="1"></script>
             </div>
 
-            <div className="text-center pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+            {/* <div className="text-center pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
               <a
                 href="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
                 target="_blank"
@@ -343,7 +330,7 @@ export default function ThankYouPage() {
                 <span>Join Referral Program</span>
                 <ArrowRight className="w-4 h-4 ml-1" />
               </a>
-            </div>
+            </div> */}
             <div className="text-center pt-1">
             </div>
           </div>
@@ -563,85 +550,19 @@ export default function ThankYouPage() {
         </section>
       </main>
 
-      {/* Floating Refer & Earn Button */}
-      <button
-        type="button"
-        onClick={() => setReferralPopupOpen(true)}
-        className="fixed bottom-6 right-6 z-40 bg-[#5D196C] hover:bg-[#4a1256] text-white font-bold text-sm sm:text-base py-3 px-5 rounded-full shadow-2xl flex items-center gap-2.5 transition-all transform hover:scale-105 cursor-pointer"
-        aria-label="Open referral program popup"
-      >
-        <Gift className="w-5 h-5 text-purple-200" />
-        <span>Refer &amp; Earn</span>
-      </button>
-
-      {/* Referral Program Modal Popup */}
-      {referralPopupOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs"
-          onClick={() => setReferralPopupOpen(false)}
-        >
-          <div
-            className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-purple-100 flex flex-col space-y-4 max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Close Button */}
-            <button
-              type="button"
-              onClick={() => setReferralPopupOpen(false)}
-              className="absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition-colors cursor-pointer"
-              aria-label="Close popup"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            {/* Header */}
-            <div className="text-center space-y-2 pt-2">
-              <div className="w-14 h-14 mx-auto rounded-2xl bg-purple-100 text-[#5D196C] flex items-center justify-center shadow-inner">
-                <Gift className="w-7 h-7" />
-              </div>
-              <span className="inline-block bg-purple-100 text-[#5D196C] text-[11px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
-                EXCLUSIVE REWARDS
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-950">
-                Refer &amp; <span className="text-[#5D196C]">Earn</span>
-              </h3>
-              <p className="text-slate-600 text-sm max-w-sm mx-auto">
-                Invite friends to The Trading Minds Webinar and earn exclusive perks for every referral!
-              </p>
-            </div>
-
-            {/* Embed / Iframe */}
-            <div className="w-full h-[360px] sm:h-[400px] rounded-2xl border border-slate-100 overflow-hidden bg-slate-50 relative">
-              <iframe
-                src="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
-                title="Referral Program"
-                className="w-full h-full border-0"
-              />
-            </div>
-
-            {/* CTA Link Button */}
-            <div className="flex flex-col gap-2 pt-1 text-center">
-              <a
-                href="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#5D196C] hover:bg-[#4a1256] text-white font-bold text-sm sm:text-base py-3.5 px-5 rounded-xl shadow-md hover:shadow-lg transition-all"
-              >
-                <span>Open in New Tab</span>
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </a>
-              <a
-                href="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-slate-500 hover:text-[#5D196C] underline break-all mt-1"
-              >
-
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+      <script
+        src="https://app.chirpxp.com/embed.js"
+        data-program="https://app.chirpxp.com/the_trading_minds/r/the_trading_minds_ambassador_program_h50j"
+        data-mode="widget"
+        data-look="card"
+        data-heading="Refer &amp; Win specialised, limited-access rewards"
+        data-subline="Join and introduce your friends and family to the market — learn together in Kannada."
+        data-button="Join Referral Program"
+        data-symbol="🎁"
+        data-spot="bottom-right"
+        data-x="20"
+        data-y="20"
+      ></script>
     </div>
   );
 }
